@@ -1,9 +1,16 @@
+import Features from "@/components/Features";
+import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import SmoothScroll from "@/components/SmoothScroll";
 
 export default function Home() {
   return (
-    <div className="">
-      <Navbar/>
-    </div>
+    <SmoothScroll>
+      <div className="">
+        <Navbar />
+        <Hero />
+        <Features/>
+      </div>
+    </SmoothScroll>
   );
 }
