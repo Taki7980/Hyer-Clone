@@ -46,7 +46,7 @@ const Hero = () => {
               "most out of your flying",
               "experience.",
             ].map((text, index) => (
-              <p key={index} className="w-fit">
+              <p key={index} className="w-fit font-bold">
                 {text}
               </p>
             ))}

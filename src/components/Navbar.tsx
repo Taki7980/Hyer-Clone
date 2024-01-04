@@ -69,10 +69,10 @@ const Navbar = () => {
             </div>
           </motion.div>
           <div className="flex gap-2 flex-row md:flex-col w-full text-5xl py-3 px-8">
-            <p className="bg-gradient-to-t from-gray-500 to-blue-500 bg-clip-text text-transparent">
+            <p className="bg-gradient-to-t font-bold from-gray-500 to-blue-500 bg-clip-text text-transparent">
               Personalised
             </p>
-            <p className="">Aviation</p>
+            <p className="font-bold">Aviation</p>
           </div>
         </motion.div>
       </motion.div>

@@ -1,9 +1,19 @@
 import type { Metadata } from "next";
-import { Ubuntu } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/resuseable/ThemeProvider";
+import { cn } from "@/lib/utils";
+import localFont from 'next/font/local';
 
-const inter = Ubuntu({ weight: "500", subsets: ["cyrillic"] });
+const myFont = localFont({
+  src:"../../public/fonts/NeueHaasDisplayLight.ttf"
+});
+const myFont1 = localFont({
+  src:"../../public/fonts/NeueHaasDisplayMediu.ttf"
+});
+const myFont2 = localFont({
+  src:"../../public/fonts/NeueHaasDisplayRoman.ttf",
+  weight: "bold"
+});
 
 export const metadata: Metadata = {
   title: "Hyer-Clone",
@@ -17,7 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={cn("",myFont2)}>
         <ThemeProvider attribute="class" defaultTheme="system">
           {children}
         </ThemeProvider>
